@@ -6,7 +6,6 @@ COPY ./client/package*.json ./
 RUN npm install
 
 COPY ./client ./
-RUN npm run build
 
 FROM nginx:alpine
 
