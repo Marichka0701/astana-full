@@ -6,14 +6,14 @@ export const addBlackDroneToMap = (map, dispatch) => {
     const addDroneToMap = () => {
         const placementTime = new Date().toISOString();
 
-        const astanaLatitude = 51.122 + Math.random() * (process.env.REACT_APP_ASTANA_LATITUDE - 51.122);
-        const astanaLongitude = 71.430 + Math.random() * (process.env.REACT_APP_ASTANA_LONGITUDE - 71.430);
+        const abuDabiLatitude = 24.315 + Math.random() * (process.env.REACT_APP_ABU_DABI_LATITUDE - 24.315);
+        const abuDabiLongitude = 54.312 + Math.random() * (process.env.REACT_APP_ABU_DABI_LONGITUDE - 54.312);
 
         const radius = Math.random() * 0.11;
 
         const pointAroundAbuDabi = (angle) => {
-            const newLatitude = astanaLatitude + Math.cos(angle) * radius;
-            const newLongitude = astanaLongitude + Math.sin(angle) * radius;
+            const newLatitude = abuDabiLatitude + Math.cos(angle) * radius;
+            const newLongitude = abuDabiLongitude + Math.sin(angle) * radius;
 
             return {
                 'type': 'Point',
@@ -60,7 +60,7 @@ export const addBlackDroneToMap = (map, dispatch) => {
         dispatch(dronesHistoryActions.setBlackDrones({
             type: 'black',
             droneId,
-            startPosition: [astanaLongitude, astanaLatitude],
+            startPosition: [abuDabiLongitude, abuDabiLatitude],
             placementTime,
         }));
 
@@ -101,7 +101,7 @@ export const addBlackDroneToMap = (map, dispatch) => {
             dispatch(dronesHistoryActions.setPastDrones({
                 type: 'black',
                 droneId,
-                startPosition: [astanaLongitude, astanaLatitude],
+                startPosition: [abuDabiLongitude, abuDabiLatitude],
                 placementTime,
                 droneName: 'Mavic JS',
                 maxHeight: Math.floor(300 + Math.random() * (700 - 300)),

@@ -1,8 +1,8 @@
 import {getRandomTime} from "./getRandomTime";
 import {getRandomDate} from "./getRandomDate";
 
-const latitude = 51.129300;
-const longitude = 71.451100;
+const latitude = 24.400745;
+const longitude = 54.382988;
 
 const numberOfPoints = 5;
 const maxOffset = 10 / 111.32;

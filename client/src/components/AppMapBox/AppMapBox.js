@@ -62,8 +62,8 @@ const AppMapBox = ({selectedOption}) => {
             mapRef.current = new mapboxgl.Map({
                 container: 'map',
                 style: process.env.REACT_APP_MAPBOX_STYLE,
-                center: [process.env.REACT_APP_ASTANA_LONGITUDE, process.env.REACT_APP_ASTANA_LATITUDE],
-                zoom: 10.30,
+                center: [process.env.REACT_APP_ABU_DABI_LONGITUDE, process.env.REACT_APP_ABU_DABI_LATITUDE],
+                zoom: 10.85,
             });
             mapRef.current.addControl(new mapboxgl.NavigationControl({showCompass: false}), 'bottom-right');
         }
