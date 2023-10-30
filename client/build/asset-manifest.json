@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4bff1d54.css",
-    "main.js": "/static/js/main.79b2a0c2.js",
+    "main.css": "/static/css/main.4a8dc618.css",
+    "main.js": "/static/js/main.253e568d.js",
     "static/media/black-drone-info.svg": "/static/media/black-drone-info.747081e148c5bffd5f56b093cc5cdcf2.svg",
     "static/media/white-drone-info.svg": "/static/media/white-drone-info.e4e749834d3c2948491f6eb4c55cbfa4.svg",
     "static/media/abu-dabi.svg": "/static/media/abu-dabi.8c0d41cb2804332a73c42672dd1eaeb3.svg",
@@ -13,11 +13,11 @@
     "static/media/menu-active.svg": "/static/media/menu-active.b4cf308a3a92bc8a14561f96b85e8990.svg",
     "static/media/menu.svg": "/static/media/menu.cda5aa10314759886ac1e45267fe810c.svg",
     "index.html": "/index.html",
-    "main.4bff1d54.css.map": "/static/css/main.4bff1d54.css.map",
-    "main.79b2a0c2.js.map": "/static/js/main.79b2a0c2.js.map"
+    "main.4a8dc618.css.map": "/static/css/main.4a8dc618.css.map",
+    "main.253e568d.js.map": "/static/js/main.253e568d.js.map"
   },
   "entrypoints": [
-    "static/css/main.4bff1d54.css",
-    "static/js/main.79b2a0c2.js"
+    "static/css/main.4a8dc618.css",
+    "static/js/main.253e568d.js"
   ]
 }
