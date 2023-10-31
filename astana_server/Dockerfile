@@ -7,6 +7,6 @@ RUN npm install
 
 COPY ./abu_server ./
 
-EXPOSE 8003
+EXPOSE 8001
 
 CMD ["npm", "start"]
