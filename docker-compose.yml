@@ -21,7 +21,7 @@ services:
   saudi-client:
     build:
       context: .
-      dockerfile: astana_client/Dockerfile
+      dockerfile: saudi_client/Dockerfile
     ports:
       - "82:80"
   saudi-server:
