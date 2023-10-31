@@ -16,4 +16,4 @@ app.use(cors());
 app.use("/api/auth", authRoutes);
 
 const port = 8001;
-app.listen(port, () => console.log(`Listening on port ${port}...`));
+app.listen(port, () => console.log(`Listening on the port ${port}...`));

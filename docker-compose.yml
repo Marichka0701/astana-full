@@ -28,7 +28,7 @@ services:
   saudi-server:
     build:
       context: .
-      dockerfile: astana_server/Dockerfile
+      dockerfile: saudi_server/Dockerfile
     ports:
       - "8002:8000"
     environment:
