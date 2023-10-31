@@ -1,15 +1,7 @@
-FROM node:16 AS build
-
+FROM nginx:alpine
 WORKDIR /app
 
-COPY ./astana_client/package*.json ./
-RUN npm install
-
-COPY ./astana_client ./
-
-FROM nginx:alpine
-
-COPY --from=build /app/build /usr/share/nginx/html
+COPY astana_client/build /usr/share/nginx/html
 
 EXPOSE 81
 

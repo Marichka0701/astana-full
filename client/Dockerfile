@@ -1,15 +1,7 @@
-FROM node:16 AS build
-
-WORKDIR /app
-
-COPY ./client/package*.json ./
-RUN npm install
-
-COPY ./client ./
-
 FROM nginx:alpine
 
-COPY --from=build /app/build /usr/share/nginx/html
+
+COPY client/build /usr/share/nginx/html
 
 EXPOSE 83
 
