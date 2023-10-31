@@ -2,10 +2,10 @@ FROM node:16
 
 WORKDIR /app
 
-COPY ./abu_server/package*.json ./
+COPY ./astana_server/package*.json ./
 RUN npm install
 
-COPY ./abu_server ./
+COPY ./astana_server ./
 
 EXPOSE 8001
 

@@ -7,8 +7,6 @@ services:
       dockerfile: astana_client/Dockerfile
     ports:
       - "81:81"
-    networks:
-      - drones
 
   astana-server:
     build:
@@ -18,8 +16,6 @@ services:
       - "8001:8001"
     environment:
       - NODE_ENV=development
-    networks:
-      - drones
 
 
   saudi-client:
@@ -28,9 +24,6 @@ services:
       dockerfile: astana_client/Dockerfile
     ports:
       - "82:82"
-    networks:
-      - drones
-
   saudi-server:
     build:
       context: .
@@ -39,8 +32,6 @@ services:
       - "8002:8002"
     environment:
       - NODE_ENV=development
-    networks:
-      - drones
 
   abu-client:
     build:
@@ -48,8 +39,6 @@ services:
       dockerfile: client/Dockerfile
     ports:
       - "83:83"
-    networks:
-      - drones
 
   abu-server:
     build:
@@ -59,8 +48,6 @@ services:
       - "8003:8003"
     environment:
       - NODE_ENV=development
-    networks:
-      - drones
 
   nginx:
     image: nginx:alpine
@@ -75,11 +62,3 @@ services:
       - astana-server
       - saudi-client
       - saudi-server
-    networks:
-      - drones
-
-
-
-networks:
-  drones:
-    driver: bridge
