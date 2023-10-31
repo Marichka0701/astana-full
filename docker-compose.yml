@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: astana_client/Dockerfile
     ports:
-      - "81:81"
+      - "81:80"
 
   astana-server:
     build:
@@ -23,7 +23,7 @@ services:
       context: .
       dockerfile: astana_client/Dockerfile
     ports:
-      - "82:82"
+      - "82:80"
   saudi-server:
     build:
       context: .
@@ -38,7 +38,7 @@ services:
       context: .
       dockerfile: client/Dockerfile
     ports:
-      - "83:83"
+      - "83:80"
 
   abu-server:
     build:
